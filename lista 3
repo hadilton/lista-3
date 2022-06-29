@@ -1,0 +1,596 @@
+1-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe1Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n;
+            int x = 0;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Digite um valor positivo");
+                n = int.Parse(Console.ReadLine());
+
+            } while (n <= x);
+            Console.WriteLine("Valor correto");
+        }
+    }
+}
+
+2-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe2Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n;
+            int x;
+            int c;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Digite dois valores via teclado, respeitando a condição de 2º valor > 1º valor");
+                Console.WriteLine("Digite o primeiro valor");
+                n = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite o segundo valor");
+                x = int.Parse(Console.ReadLine());
+
+            }
+            while (n > x);
+            Console.WriteLine("Parabéns, condição concluida!!");
+        }
+    }
+}
+
+3-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe3Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string f = "f";
+            string m = "m";
+            string e;
+
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Digite o seu sexo, sendo entre F ou M");
+                e = Console.ReadLine();
+
+            } while (e != f && e != m);
+            Console.WriteLine("Condição correta!");
+        }
+    }
+}
+
+4-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe4Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int e = 5; e <= 5; e++)
+            {
+                for (int d = 1; d <= 10; d++)
+                {
+                    Console.WriteLine(e + " x " + d + " = " + e * d);
+                }
+            }
+            Console.Read();
+        }
+    
+    }
+}
+5-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe5Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int tabuada;
+            int b = 0;
+            int d;
+
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Qual tabuada você quer ver? Apenas numeros positivos!!");
+                tabuada = Convert.ToInt16(Console.ReadLine());
+            } while (tabuada < b);
+            for (int c = 1; c <= 10; c++)
+            {
+                Console.WriteLine(tabuada + " x " + c + " = " + tabuada * c);
+            }
+            Console.Read();
+        }
+    }
+}
+6-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe6Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n;
+            int x;
+            int c;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Digite dois valores, respeitando a condição de 2º > 1º");
+                Console.WriteLine("Digite o primeiro valor");
+                n = Convert.ToInt16(Console.ReadLine());
+                Console.WriteLine("Digite o segundo valor");
+                x = Convert.ToInt16(Console.ReadLine());
+            }
+            while (n > x) ;
+            Console.WriteLine("Digite o intervalo a ser calculada a sua tabuada? ");
+            c = int.Parse(Console.ReadLine());
+
+            for (int f = 1; f <= c; f++)
+            {
+                Console.WriteLine(n + " x " + f + " = " + f);
+            }
+        }
+    }
+}
+7-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe7Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int e = 1; e <= 20; e++)
+            {
+                Console.Write("Inicie a tabuada apertantdo qualquer tecla. ");
+                Console.ReadLine();
+                for (int c = 1; c <= 10; c++)
+
+                {
+                    Console.WriteLine(e + " x " + c + " = " + e * c);
+                }
+            }
+        }
+    }
+}
+8-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe8Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int inicio = 1;
+            int final = 100;
+            int soma = 0;
+
+            for (int i = inicio; i <= final; i++)
+            {
+                soma = soma + i;
+            }
+            Console.WriteLine(soma);
+        }
+    }
+}
+9-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe9Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 1;
+            int x = 1;
+            int aux = 0;
+
+            Console.WriteLine("Os 30 primeiros valores da serie de fibonacci");
+
+
+            while (x < 1000000)
+            {
+                Console.WriteLine(x);
+                x = x + aux;
+                aux = n;
+                n = x;
+
+            }
+
+        }
+    }
+}
+10-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe10Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double maior;
+            double a, b, c, d, e, f, g, h, i, j;
+            double soma;
+            double ma;
+
+
+            Console.WriteLine("Digite o 1º valor");
+            a = Convert.ToInt32(Console.ReadLine());
+            maior = a;
+
+            Console.WriteLine("Digite o 2º valor");
+            b = Convert.ToInt32(Console.ReadLine());
+            if (b > maior)
+            {
+                maior = b;
+            }
+
+            Console.WriteLine("Digite o 3º valor");
+            c = Convert.ToInt32(Console.ReadLine());
+            if (c > maior)
+            {
+                maior = c;
+            }
+
+            Console.WriteLine("Digite o 4º valor");
+            d = Convert.ToInt32(Console.ReadLine());
+            if (d > maior)
+            {
+                maior = d;
+            }
+
+            Console.WriteLine("Digite o 5º valor");
+            e = Convert.ToInt32(Console.ReadLine());
+            if (e > maior)
+            {
+                maior = e;
+            }
+
+            Console.WriteLine("Digite o 6º valor");
+            f = Convert.ToInt32(Console.ReadLine());
+            if (f > maior)
+            {
+                maior = f;
+            }
+
+            Console.WriteLine("Digite o 7º valor");
+            g = Convert.ToInt32(Console.ReadLine());
+            if (g > maior)
+            {
+                maior = g;
+            }
+
+            Console.WriteLine("Digite o 8º valor");
+            h = Convert.ToInt32(Console.ReadLine());
+            if (h > maior)
+            {
+                maior = h;
+            }
+
+            Console.WriteLine("Digite o 9º valor");
+            i = Convert.ToInt32(Console.ReadLine());
+            if (i > maior)
+            {
+                maior = i;
+            }
+
+
+            Console.WriteLine("Digite o 10º valor");
+            j = Convert.ToInt32(Console.ReadLine());
+            if (j > maior)
+            {
+                maior = j;
+            }
+
+            Console.WriteLine("O maior valor: {0}", maior);
+
+
+            soma = a + b + c + d + e + f + g + h + i + j;
+            Console.WriteLine("A soma total: {0} ", soma);
+
+
+            ma = soma / 10;
+            Console.WriteLine("A media aritmetica dos valores é: {0}", ma);
+            Console.ReadKey();
+        }
+    }
+}
+11-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe11Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double numeros = 0;
+            double a = 0;
+            double p = 0;
+            double n = 0;
+            double valor = 0;
+            double maior = 0;
+            double menor = 0;
+            double soma = 0;
+            double ma = 0;
+            double pp = 0;
+            double pn = 0;
+
+
+            Console.WriteLine("Digite a quantidade de valores, sendo positivo e menor que 20");
+            numeros = double.Parse(Console.ReadLine());
+            while (numeros < 0 || numeros >= 20)
+            {
+                Console.WriteLine("Informe a quantidade de valores novamente. ");
+                numeros = double.Parse(Console.ReadLine());
+            }
+
+            while (a < numeros)
+            {
+                a++;
+                Console.Write("{0}º Valor: ", a);
+                valor = double.Parse(Console.ReadLine());
+                if (a == 1)
+                {
+                    maior = menor = valor;
+                }
+                else
+                {
+                    if (valor > maior)
+                    {
+                        maior = valor;
+                    }
+                    else
+                    {
+                        if (valor < menor)
+                        {
+                            menor = valor;
+                        }
+                    }
+                }
+                soma = soma + valor;
+                if (valor >= 0)
+                {
+                    p++;
+                }
+                else
+                {
+                    n++;
+                }
+            }
+            ma = soma / numeros;
+            pp = p * 100 / numeros;
+            pn = n * 100 / numeros;
+
+            Console.WriteLine("\n\nMaior Valor: {0}", maior);
+            Console.WriteLine("Menor Valor: {0}", menor);
+            Console.WriteLine("A soma dos valores declarados foi: {0}", soma);
+            Console.WriteLine("A media aritmetica dos valores declarados foi: {0}", ma);
+            Console.WriteLine("A porcentagem positiva dos valores declarados: {0}%", pp);
+            Console.WriteLine("A porcentagem negativa dos valores declarados: {0}%", pn);
+
+        }
+    }
+}
+12-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe12Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char escolha;
+            do
+            {
+                double numeros = 0;
+                double a = 0;
+                double p = 0;
+                double n = 0;
+                double valor = 0;
+                double maior = 0;
+                double menor = 0;
+                double soma = 0;
+                double ma = 0;
+                double pp = 0;
+                double pn = 0;
+
+
+
+                Console.WriteLine("Digite a quantidade de valores, sendo positivo e menor que 20");
+                numeros = double.Parse(Console.ReadLine());
+                while (numeros < 0 || numeros >= 20)
+                {
+                    Console.WriteLine("Erro!!!, Informe a quantidade de valores mais uma vez...");
+                    numeros = double.Parse(Console.ReadLine());
+                }
+
+                Console.WriteLine("");
+
+                while (a < numeros)
+                {
+                    a++;
+                    Console.Write("{0}º Valor: ", a);
+                    valor = double.Parse(Console.ReadLine());
+                    if (a == 1)
+                    {
+                        maior = menor = valor;
+                    }
+                    else
+                    {
+                        if (valor > maior)
+                        {
+                            maior = valor;
+                        }
+                        else
+                        {
+                            if (valor < menor)
+                            {
+                                menor = valor;
+                            }
+                        }
+                    }
+                    soma = soma + valor;
+                    if (valor >= 0)
+                    {
+                        p++;
+                    }
+                    else
+                    {
+                        n++;
+                    }
+                }
+                ma = soma / numeros;
+                pp = p * 100 / numeros;
+                pn = n * 100 / numeros;
+
+                Console.WriteLine("\n\nMaior Valor: {0}", maior);
+                Console.WriteLine("Menor Valor: {0}", menor);
+                Console.WriteLine("A soma dos valores declarados foi: {0}", soma);
+                Console.WriteLine("A media aritmetica dos valores declarados foi: {0}", ma);
+                Console.WriteLine("A porcentagem positiva dos valores declarados foi de: {0}%", pp);
+                Console.WriteLine("A porcentagem negativa dos valores declarados foi de: {0}%", pn);
+
+                Console.WriteLine("");
+                do
+                {
+                    Console.WriteLine("Executar Novamente o programa? (S) para sim, (N) para Não?");
+                    escolha = char.Parse(Console.ReadLine());
+
+                } while (escolha != 'S' && escolha != 'N');
+            } while (escolha == 'S');
+        }
+    }
+}
+13-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exe13Lista3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char escolha;
+            do
+            {
+                double i, numero, fatorial;
+                Console.WriteLine("Informe o número");
+                numero = double.Parse(Console.ReadLine());
+
+                fatorial = numero;
+                for (i = numero - 1; i >= 1; i--)
+                {
+                    Console.WriteLine($"{fatorial} * {i}");
+
+                    fatorial = fatorial * i;
+
+                    Console.WriteLine($"i={i}");
+                    Console.WriteLine($"fatorial={fatorial}");
+                    Console.WriteLine("  ");
+                }
+                Console.WriteLine($"\nFatorial de {numero} é {fatorial} ");
+
+                do
+                {
+                    Console.WriteLine("Deseja executar o programa novamente? (S) para sim, (N) para não.");
+                    escolha = char.Parse(Console.ReadLine());
+
+                } while (escolha != 'S' && escolha != 'N');
+
+            } while (escolha != 'N');
+        }
+    }
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Do
